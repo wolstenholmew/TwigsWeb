@@ -2,7 +2,7 @@
 <%--@elvariable id="booking" type="com.twigs.springmvc.booking.Booking"--%>
 <html>
 <head>
-    <title></title>
+    <title>Booking Summary</title>
 </head>
 <body>
 
