@@ -3,7 +3,7 @@
 <html>
 <head>
     <title></title>
-    <style>.cssErrors{color: red}</style>
+    <style>.cssErrors{color: blue}</style>
 </head>
 <body>
 
