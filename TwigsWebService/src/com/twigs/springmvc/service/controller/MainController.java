@@ -1,7 +1,7 @@
 package com.twigs.springmvc.service.controller;
 
-import com.twigs.springmvc.api.BookingRequest;
-import com.twigs.springmvc.api.BookingResponse;
+import com.twigs.springmvc.api.request.BookingRequest;
+import com.twigs.springmvc.api.response.BookingResponse;
 import com.twigs.springmvc.api.ITwigService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -26,7 +26,7 @@ public class MainController {
         return "booking-search-form";
     }
 
-    @RequestMapping(value = "/booking-summary", method = RequestMethod.POST)
+    @RequestMapping(value = "/booking-summary", method = RequestMethod.GET)
     public String bookingSummary( @Valid BookingRequest bookingRequest,
                         BindingResult bindingResult,
                         Model model) {

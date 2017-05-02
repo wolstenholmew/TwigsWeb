@@ -1,5 +1,6 @@
 package com.twigs.springmvc.service.booking;
 
+import com.twigs.springmvc.api.entity.Booking;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;

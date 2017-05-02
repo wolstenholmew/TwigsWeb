@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%--@elvariable id="bookingResponse" type="com.twigs.springmvc.api.BookingResponse"--%>
+<%--@elvariable id="bookingResponse" type="com.twigs.springmvc.api.response.BookingResponse"--%>
 <html>
 <head>
     <title>Booking Summary</title>

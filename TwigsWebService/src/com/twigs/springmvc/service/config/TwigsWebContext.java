@@ -1,8 +1,5 @@
 package com.twigs.springmvc.service.config;
 
-import com.twigs.springmvc.service.booking.BookingDAO;
-import com.twigs.springmvc.api.ITwigService;
-import com.twigs.springmvc.service.TwigService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -17,12 +14,12 @@ import javax.sql.DataSource;
 
 @EnableWebMvc
 @Configuration
-@ComponentScan({"com.twigs.springmvc"})
+@ComponentScan( {"com.twigs.springmvc"} )
 public class TwigsWebContext extends WebMvcConfigurerAdapter {
 
     private static final String JNDI_DATASOURCE = "tbxDataSource";
 
-    @Bean(destroyMethod = "")
+    @Bean( destroyMethod = "" )
     public DataSource dataSource() {
         JndiDataSourceLookup lookup = new JndiDataSourceLookup();
         return lookup.getDataSource( JNDI_DATASOURCE );
@@ -30,29 +27,19 @@ public class TwigsWebContext extends WebMvcConfigurerAdapter {
 
     @Bean
     public JdbcTemplate jdbcTemplate() {
-        return new JdbcTemplate(dataSource());
-    }
-
-    @Bean
-    public BookingDAO resBookingDAO() {
-        return new BookingDAO();
-    }
-
-    @Bean("twigService")
-    public ITwigService twigService() {
-        return new TwigService();
+        return new JdbcTemplate( dataSource() );
     }
 
     @Bean
     public InternalResourceViewResolver viewResolver() {
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-        viewResolver.setPrefix("/WEB-INF/view/");
-        viewResolver.setSuffix(".jsp");
+        viewResolver.setPrefix( "/WEB-INF/view/" );
+        viewResolver.setSuffix( ".jsp" );
         return viewResolver;
     }
 
     @Override
-    public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/").setViewName("main-menu");
+    public void addViewControllers( ViewControllerRegistry registry ) {
+        registry.addViewController( "/" ).setViewName( "main-menu" );
     }
 }

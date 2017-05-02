@@ -1,4 +1,4 @@
-package com.twigs.springmvc.service.booking;
+package com.twigs.springmvc.api.entity;
 
 import javax.validation.constraints.Min;
 import java.sql.Date;

@@ -9,7 +9,7 @@
 
     <p>booking-search-form.jsp</p>
 
-    <form:form commandName="bookingRequest" action="booking-summary">
+    <form:form commandName="bookingRequest" action="booking-summary" method="get">
         Booking Id:
         <form:input path="bookingId" />
         <form:errors path="bookingId" cssClass="cssErrors" />

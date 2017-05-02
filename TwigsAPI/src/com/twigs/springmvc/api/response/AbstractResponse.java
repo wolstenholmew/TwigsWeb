@@ -1,4 +1,4 @@
-package com.twigs.springmvc.service;
+package com.twigs.springmvc.api.response;
 
 public class AbstractResponse {
 

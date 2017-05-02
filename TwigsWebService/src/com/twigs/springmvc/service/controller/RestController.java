@@ -1,7 +1,7 @@
 package com.twigs.springmvc.service.controller;
 
-import com.twigs.springmvc.service.booking.Booking;
-import com.twigs.springmvc.api.BookingRequest;
+import com.twigs.springmvc.api.response.BookingResponse;
+import com.twigs.springmvc.api.request.BookingRequest;
 import com.twigs.springmvc.api.ITwigService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -18,8 +18,8 @@ public class RestController {
     @Qualifier("twigService")
     private ITwigService twigService;
 
-    @RequestMapping(value = "/booking-summary", method = RequestMethod.POST)
-    public Booking rsBookingSummary( @Valid BookingRequest bookingRequest ) {
+    @RequestMapping(value = "/booking-summary", method = RequestMethod.GET)
+    public BookingResponse rsBookingSummary( @Valid BookingRequest bookingRequest ) {
         return twigService.findBookingById( bookingRequest );
     }
 

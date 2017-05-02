@@ -1,4 +1,4 @@
-package com.twigs.springmvc.api;
+package com.twigs.springmvc.api.request;
 
 import javax.validation.constraints.Min;
 

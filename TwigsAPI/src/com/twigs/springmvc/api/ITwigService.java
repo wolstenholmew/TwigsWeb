@@ -1,7 +1,7 @@
 package com.twigs.springmvc.api;
 
-import com.twigs.springmvc.api.BookingRequest;
-import com.twigs.springmvc.api.BookingResponse;
+import com.twigs.springmvc.api.request.BookingRequest;
+import com.twigs.springmvc.api.response.BookingResponse;
 
 public interface ITwigService {
 
