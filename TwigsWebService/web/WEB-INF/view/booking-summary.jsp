@@ -1,17 +1,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%--@elvariable id="booking" type="com.twigs.springmvc.booking.Booking"--%>
+<%--@elvariable id="bookingResponse" type="com.twigs.springmvc.api.BookingResponse"--%>
 <html>
 <head>
-    <title></title>
+    <title>Booking Summary</title>
 </head>
 <body>
 
     <a href="/">home</a>
 
     <p>booking-summary.jsp</p>
-    bookingId: ${booking.bookingId}
+    bookingId: ${bookingResponse.booking.bookingId}
     <br />
-    depDate: ${booking.departureDate}
+    depDate: ${bookingResponse.booking.departureDate}
 
 </body>
 </html>

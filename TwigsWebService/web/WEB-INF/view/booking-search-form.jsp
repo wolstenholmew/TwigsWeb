@@ -2,8 +2,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title></title>
-    <style>.cssErrors{color: red}</style>
+    <title>Booking Search</title>
+    <style>.cssErrors{color: blue}</style>
 </head>
 <body>
 

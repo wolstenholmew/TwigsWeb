@@ -1,8 +1,10 @@
 package com.twigs.springmvc.service;
 
-import com.twigs.springmvc.booking.Booking;
-import com.twigs.springmvc.booking.BookingDAO;
-import com.twigs.springmvc.booking.BookingRequest;
+import com.twigs.springmvc.api.ITwigService;
+import com.twigs.springmvc.service.booking.Booking;
+import com.twigs.springmvc.service.booking.BookingDAO;
+import com.twigs.springmvc.api.BookingRequest;
+import com.twigs.springmvc.api.BookingResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -13,7 +15,14 @@ public class TwigService implements ITwigService {
     private BookingDAO bookingDAO;
 
     @Override
-    public Booking findBookingById( BookingRequest bookingRequest ) {
-        return bookingDAO.findBookingById( bookingRequest.getBookingId() );
+    public BookingResponse findBookingById( BookingRequest bookingRequest ) {
+        BookingResponse response = new BookingResponse();
+        try {
+            Booking booking = bookingDAO.findBookingById( bookingRequest.getBookingId() );
+            response.setBooking( booking );
+        } catch ( Exception dae ) {
+            response.setSuccess( false );
+        }
+        return response;
     }
 }
