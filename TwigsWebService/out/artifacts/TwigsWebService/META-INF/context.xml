@@ -1,4 +1,0 @@
-<Context>
-    <ResourceLink name="tbxDataSource" global="global/tbxDataSource" auth="Container" type="javax.sql.DataSource" />
-    <!--<ResourceLink name="twigsDataSource" global="global/twigsDataSource" auth="Container" type="javax.sql.DataSource" />-->
-</Context>

@@ -6,13 +6,10 @@ public class AbstractResponse {
     private String message;
 
     public AbstractResponse() {
+        this.success = true;
     }
 
-    public AbstractResponse(boolean success) {
-        this.success = success;
-    }
-
-    public AbstractResponse(boolean success, String message) {
+    public void updateResponse(boolean success, String message) {
         this.success = success;
         this.message = message;
     }

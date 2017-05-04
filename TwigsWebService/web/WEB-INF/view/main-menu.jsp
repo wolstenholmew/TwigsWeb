@@ -5,9 +5,10 @@
 </head>
 <body>
 
-    <p>index.jsp</p>
+    <h2>DEV4</h2>
+    <h3>example REST service</h3>
 
-    <a href="booking-search">Find Booking</a>
+    <p>rs/booking-summary/{bookingId}</p>
 
 </body>
 </html>

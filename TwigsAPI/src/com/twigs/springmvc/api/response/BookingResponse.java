@@ -6,13 +6,6 @@ public class BookingResponse extends AbstractResponse {
 
     private Booking booking;
 
-    public BookingResponse() {
-    }
-
-    public BookingResponse( boolean success ) {
-        super(success);
-    }
-
     public Booking getBooking() {
         return booking;
     }
