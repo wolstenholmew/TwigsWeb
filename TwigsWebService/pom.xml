@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.twigs</groupId>
-    <artifactId>twigs-web-service</artifactId>
+    <artifactId>TwigsWebService</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
 
@@ -44,7 +44,7 @@
                 <version>2.2</version>
                 <configuration>
                     <url>http://server:port/manager/text</url>
-                    <server>SkimmerTomcatServer</server>
+                    <server>DEVTomcatServer</server>
                     <path>/TwigsWebService1.0</path>
                 </configuration>
             </plugin>
@@ -78,7 +78,7 @@
 
         <dependency>
             <groupId>com.twigs</groupId>
-            <artifactId>twigs-api</artifactId>
+            <artifactId>TwigsAPI</artifactId>
             <version>1.0</version>
         </dependency>
     </dependencies>
