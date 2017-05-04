@@ -180,9 +180,9 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TwigsAPI/twigs-api.iml" filepath="$PROJECT_DIR$/TwigsAPI/twigs-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TwigsRestClient/twigs-rest-client.iml" filepath="$PROJECT_DIR$/TwigsRestClient/twigs-rest-client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TwigsWebService/twigs-web-service.iml" filepath="$PROJECT_DIR$/TwigsWebService/twigs-web-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TwigsAPI/TwigsAPI.iml" filepath="$PROJECT_DIR$/TwigsAPI/TwigsAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TwigsRestClient/TwigsRestClient.iml" filepath="$PROJECT_DIR$/TwigsRestClient/TwigsRestClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TwigsWebService/TwigsWebService.iml" filepath="$PROJECT_DIR$/TwigsWebService/TwigsWebService.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
