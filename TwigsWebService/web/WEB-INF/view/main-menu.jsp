@@ -5,10 +5,11 @@
 </head>
 <body>
 
-    <h2>DEV4</h2>
-    <h3>example REST service</h3>
+    <h3>REST service - DEV4</h3>
 
-    <p>rs/booking-summary/{bookingId}</p>
+    <ul>
+        <li><b>Get Booking Summary: </b>rs/booking-summary/{bookingId}</li>
+    </ul>
 
 </body>
 </html>
